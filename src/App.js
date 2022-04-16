@@ -11,7 +11,7 @@ import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
-    <div className="bg-dark">
+    <div className="">
       <div className="container">
       <Header></Header>
       <Routes>

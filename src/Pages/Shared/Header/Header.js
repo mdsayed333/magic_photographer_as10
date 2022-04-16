@@ -1,12 +1,8 @@
 import React from "react";
 import {
   Container,
-  Form,
-  FormControl,
   Nav,
   Navbar,
-  NavDropdown,
-  Button,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Header.css";
@@ -14,7 +10,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div id="navbar">
-      <Navbar bg="dark" expand="lg">
+      <Navbar expand="lg">
         <Container fluid>
           <Navbar.Brand as={Link} to="/home">
             <span className="title">Magic Photographer</span>{" "}
@@ -30,7 +26,7 @@ const Header = () => {
               <Nav.Link href="#action2">Blog</Nav.Link>
               <Nav.Link href="#action3">About</Nav.Link>
             </Nav>
-            <Link className="myButton" to="/login">
+            <Link className="text-white myButton" to="/login">
               Login
             </Link>
           </Navbar.Collapse>

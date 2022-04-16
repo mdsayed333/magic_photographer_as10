@@ -13,7 +13,7 @@ const Services = () => {
 
     console.log(services);
     return (
-        <div className='bg-dark'>
+        <div>
             <h2 className='text-center title mt-5 mb-4'>My Services</h2>
             <Row xs={1} md={3} className="g-4">
             {

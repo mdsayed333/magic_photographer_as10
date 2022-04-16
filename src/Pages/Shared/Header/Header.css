@@ -1,8 +1,8 @@
 #navbar a{
-    color:#a49695;
+    /* color:#a49695; */
 }
 #navbar a:hover{
-    color:#ffffff;
+    color:#dd2323;
 }
 .myButton{
     border: 2px solid #E42917;

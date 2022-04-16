@@ -13,7 +13,7 @@ const Service = ({ service }) => {
                 <Card.Title className="title">{name} </Card.Title>
                 <Card.Text>
                  {description}
-                 <h2>{price} </h2>
+                 <h2 className="text-danger">{price} </h2>
                 </Card.Text>
               </Card.Body>
               <button className="myButton">Get In Touch</button>

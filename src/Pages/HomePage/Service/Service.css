@@ -1,3 +1,7 @@
 #cardBody{
     background: rgb(234, 219, 219);
 }
+.service-title{
+    font-size: 25px;
+    font-weight: 500;
+}

@@ -6,14 +6,14 @@ const Service = ({ service }) => {
   const { name, img, description, price} = service;
   return (
     <div>
-      <Col className="h-100 ">
+      <Col className="h-100">
             <Card id="cardBody" className="h-100 ">
               <Card.Img variant="top" src={img} />
               <Card.Body className="p-3">
-                <Card.Title className="title">{name} </Card.Title>
+                <p className="service-title"> {name} </p>
                 <Card.Text>
                  {description}
-                 <h2 className="text-danger">{price} </h2>
+                 <h2 className="mt-3">Price: <span className="text-danger">${price} </span></h2>
                 </Card.Text>
               </Card.Body>
               <button className="myButton">Get In Touch</button>

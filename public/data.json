@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "1hr Street Photoshoot",
+        "img": "https://previews.123rf.com/images/interfectoremua/interfectoremua1703/interfectoremua170300030/76968416-street-photoshoot-of-a-girl-in-the-city-direction-and-style-street-fashion-.jpg",
+        "description": "1 hour STREET style photography. Basic production INCLUDES +/-100 jpg from RAW",
+        "price": "US$ 230"
+    },
+    {
+        "id": 2,
+        "name": "1hr Studio Photoshoot",
+        "img": "https://previews.123rf.com/images/interfectoremua/interfectoremua1703/interfectoremua170300030/76968416-street-photoshoot-of-a-girl-in-the-city-direction-and-style-street-fashion-.jpg",
+        "description": "1 hour STUDIO fashion photography session.INCLUDES +/- 100 jpg from RAW",
+        "price": "US$ 330"
+    },
+    {
+        "id": 3,
+        "name": "6hr Studio Photoshoot",
+        "img": "https://previews.123rf.com/images/interfectoremua/interfectoremua1703/interfectoremua170300030/76968416-street-photoshoot-of-a-girl-in-the-city-direction-and-style-street-fashion-.jpg",
+        "description": "6hrs STUDIO style fashion photography session. 10 Retouched images and INCLUDES +100 jpg from RAW",
+        "price": "US$ 1,980"
+    }
+]

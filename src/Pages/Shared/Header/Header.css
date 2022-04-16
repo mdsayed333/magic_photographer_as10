@@ -1,0 +1,24 @@
+#navbar a{
+    color:#a49695;
+}
+#navbar a:hover{
+    color:#ffffff;
+}
+.myButton{
+    border: 2px solid #E42917;
+    padding: 5px 20px;
+    background-color: black;
+    color: #E42917;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.myButton:hover{
+    color: white;
+    background-color: #E42917;
+}
+.title{
+    color: #E42917;
+    font-size: 30px;
+    font-weight: bolder;
+}

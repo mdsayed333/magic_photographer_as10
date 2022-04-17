@@ -1,9 +1,16 @@
 import React from "react";
 import { Card, Col, } from "react-bootstrap";
+import { Navigate, useNavigate } from "react-router-dom";
+import CheckOut from "../../CheckOut/CheckOut";
 import './Service.css';
 
 const Service = ({ service }) => {
+  const navigate = useNavigate();
   const { name, img, description, price} = service;
+
+  const handleCheckout = () => {
+    navigate('/checkout');
+  }
   return (
     <div>
       <Col className="h-100">
@@ -17,7 +24,7 @@ const Service = ({ service }) => {
                  <h2 className="mt-3">Price: <span className="text-danger">${price} </span> </h2>
                 </Card.Text>
               </Card.Body>
-              <button className="myButton">Get In Touch</button>
+              <button onClick={handleCheckout} className="myButton">Get In Touch</button>
             </Card>
           </Col>
     </div>

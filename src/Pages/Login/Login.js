@@ -1,14 +1,38 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../../firebase.init";
 import Footer from "../Shared/Footer/Footer";
 import './Login.css';
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [
+    signInWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useSignInWithEmailAndPassword(auth);
+
+  if(user){
+    navigate('/home');
+  }
+
+  const handleFormSubmit = event =>{
+    event.preventDefault();
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+    console.log(email, password);
+
+    signInWithEmailAndPassword(email, password);
+
+  }
+
+
   return (
     <div className="container ">
       <div className="">
+        <form onSubmit={handleFormSubmit} className="w-50 mx-auto login-container  p-3 rounded">
           <h2> Login</h2>
-        <form className="w-50 mx-auto login-container  p-3 rounded">
           <div className="mb-1">
             <label className="form-label w-100">
               Email address
@@ -33,7 +57,6 @@ const Login = () => {
             </label>
           </div>
           
-
           <button
             type="submit"
             className="myButton d-block mt-2 w-50 mx-auto"

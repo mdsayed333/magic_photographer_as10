@@ -1,0 +1,24 @@
+
+.container404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.notFound{
+    width: 100%;
+    text-align: center;
+}
+.notFound h2{
+    color: white;
+    padding-bottom: 20px;
+}
+.notFound p{
+    color: rgb(175, 175, 175);
+}
+.title404{
+    color: red;
+    padding-bottom: 20px;
+    font-size: 75px;
+}

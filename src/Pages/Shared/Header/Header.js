@@ -1,11 +1,11 @@
 import { signOut } from "firebase/auth";
-import React from "react";
+import React, { useState } from "react";
 import {
   Container,
   Nav,
   Navbar,
 } from "react-bootstrap";
-import { useAuthState } from "react-firebase-hooks/auth";
+import { useAuthState, useSendPasswordResetEmail } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../../firebase.init";
 import "./Header.css";
@@ -16,6 +16,9 @@ const Header = () => {
  const logOut = () => {
    signOut(auth);
  }
+
+ 
+
   return (
     <div id="navbar">
       <Navbar expand="lg">

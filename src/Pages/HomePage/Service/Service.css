@@ -1,5 +1,9 @@
 #cardBody{
     background: rgb(234, 219, 219);
+    transition: 1s;
+}
+#cardBody:hover{
+    transform: scale(1.05);
 }
 .service-title{
     font-size: 25px;

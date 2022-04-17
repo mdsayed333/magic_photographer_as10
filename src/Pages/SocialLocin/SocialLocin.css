@@ -1,0 +1,17 @@
+
+
+.social{
+    border: 2px solid #E42917;
+    padding: 5px 20px;
+    background-color: rgb(0, 0, 0);
+    color: #E42917;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.7s;
+}
+.social:hover{
+    color: rgb(255, 255, 255);
+    background-color: #1c0d0d;
+    transform: scale(1.06);
+}

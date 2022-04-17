@@ -5,6 +5,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import Footer from "../Shared/Footer/Footer";
 import "./Login.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import google from '../../img/icon/google.png';
+import github from '../../img/icon/github2.png';
+import SocialLogin from "../SocialLocin/SocialLogin";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -36,7 +41,7 @@ const Login = () => {
 
   const forgetPassword = async () =>{
     await sendPasswordResetEmail(email);
-          alert('Sent Verification email');
+          toast('Sent Verification email');
   }
 
 
@@ -92,11 +97,15 @@ const Login = () => {
               </span>
             </p>
           </form>
-          <button onClick={forgetPassword} className="btn btn-link text-decoration-none">
+          <button onClick={forgetPassword} className=" btn btn-link">
             Forget Password
           </button>
         </div>
       </div>
+
+      <SocialLogin></SocialLogin>
+
+      <ToastContainer />
       <Footer></Footer>
     </div>
   );

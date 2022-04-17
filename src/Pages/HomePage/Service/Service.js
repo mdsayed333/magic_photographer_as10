@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Col, } from "react-bootstrap";
+import { Card, Col, } from "react-bootstrap";
 import './Service.css';
 
 const Service = ({ service }) => {
@@ -10,10 +10,11 @@ const Service = ({ service }) => {
             <Card id="cardBody" className="h-100 ">
               <Card.Img variant="top" src={img} />
               <Card.Body className="p-3">
-                <p className="service-title"> {name} </p>
+                <h2 className="service-title"> {name} </h2>
                 <Card.Text>
                  {description}
-                 <h2 className="mt-3">Price: <span className="text-danger">${price} </span></h2>
+                 <br />
+                 <h2 className="mt-3">Price: <span className="text-danger">${price} </span> </h2>
                 </Card.Text>
               </Card.Body>
               <button className="myButton">Get In Touch</button>

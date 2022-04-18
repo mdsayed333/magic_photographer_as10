@@ -48,7 +48,7 @@ const Login = () => {
   const forgetPassword = async () => {
     if(email){
       await sendPasswordResetEmail(email);
-      toast("Sent Verification email");
+      toast("Sent Password Reset email");
     }
     else{
       setForgetPasswordError(<p className="text-danger">Please enter your email.</p>);

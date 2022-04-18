@@ -1,14 +1,23 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Footer from "../Shared/Footer/Footer";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import SocialLogin from "../SocialLocin/SocialLogin";
 
 const Register = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [handleError, setHandleError] = useState("");
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+
+
+  let from = location.state?.from?.pathname || "/";
+
+  if (user) {
+    navigate(from, { replace: true });
+  }
 
   let signInError;
   if (error) {

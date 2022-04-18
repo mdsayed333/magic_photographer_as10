@@ -1,0 +1,10 @@
+.blog-container{
+    background-color: aliceblue;
+}
+.blog-ques{
+    border-bottom: 2px solid red;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-top: 50px;
+    width: 80%;
+}

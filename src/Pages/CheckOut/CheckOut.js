@@ -1,12 +1,20 @@
 import React from "react";
+import { Spinner } from "react-bootstrap";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 import Footer from "../Shared/Footer/Footer";
 import './CheckOut.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CheckOut = () => {
+    const handleSubmit = ()=>{
+        toast('Form Submit');
+    }
   return (
     <div>
         <div className="w-50 mx-auto checkout">
-      <h3> Please Input Your Details</h3>
+      <h3 className="text-danger pb-3"> Please Input Your Details</h3>
       <div className="mb-1 ">
         <label className="form-label w-100">
           Email address
@@ -38,15 +46,17 @@ const CheckOut = () => {
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="name@example.com"
+          required
           />
           </label>
       </div>
       <div className="d-block mx-auto">
-      <button className="d-block mx-auto myButton">
+      <button onClick={handleSubmit} className="d-block mx-auto myButton">
           Submit
       </button>
       </div>
     </div>
+    <ToastContainer />
     <Footer></Footer>
     </div>
   );

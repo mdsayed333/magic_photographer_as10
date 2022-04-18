@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Footer from "../Shared/Footer/Footer";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import SocialLogin from "../SocialLocin/SocialLogin";
 
 const Register = () => {
   const [handleError, setHandleError] = useState("");
@@ -89,6 +90,7 @@ const Register = () => {
             </span>
           </p>
         </form>
+        <SocialLogin></SocialLogin>
       </div>
       <Footer></Footer>
     </div>

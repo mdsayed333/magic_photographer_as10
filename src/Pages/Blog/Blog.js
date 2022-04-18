@@ -10,7 +10,7 @@ const Blog = () => {
                     <span className='text-danger'>Ques :</span> Difference between authorization and authentication.
                 </h4>
                 <p>
-                    <span className='fw-bolder'>Ans :</span> Authorization হলো ব্যাক্তি বা system কে কোনো একটা এদটয এর অনুমোদন বা ব্যবহার করার অধিকার দেওয়া।
+                    <span className='fw-bolder'>Ans :</span> Authorization হলো ব্যাক্তি বা system কে কোনো একটা site এর অনুমোদন বা ব্যবহার করার অধিকার দেওয়া।
                    <br /> আর, <br /> Authentication হলো কোনো site এর ব্যবহার করার অনুমোদন আছে কিনা সেটা চেক করা।
                 </p>        
             </div>
@@ -20,7 +20,7 @@ const Blog = () => {
                     implement authentication?
                 </h4>
                 <p>
-                    <span className='fw-bolder'>Ans :</span> আমি firebase ব্যবহার করি কারণ - Firebase Authentication এবং hosting এর মতো অনেক সুবিধা দিয়ে থাকে। 
+                    <span className='fw-bolder'>Ans :</span> আমি Firebase ব্যবহার করি কারণ - Firebase Authentication এবং hosting এর মতো অনেক সুবিধা দিয়ে থাকে। 
                     Firebase অন্যান্য server এর তুলনায় নিরাপদ এবং এটি ব্যবহার করা অনেক সহজ।
                 </p>
                 <p>
@@ -39,7 +39,7 @@ const Blog = () => {
                     <span className='text-danger'>Ques :</span> What other services does firebase provide other than authentication?
                 </h4>
                 <p>
-                    <span className='fw-bolder'>Ans :</span> Authentication ছাড়াও firebase যেসব service দিয়ে থাকে তার মধ্যে গুরুত্বপূর্ণ হলো:-
+                    <span className='fw-bolder'>Ans :</span> Authentication ছাড়াও Firebase যেসব service দিয়ে থাকে তার মধ্যে গুরুত্বপূর্ণ হলো:-
                     <ol>
                         <li>Firebase Machine Learning</li>
                         <li>Firebase  Realtime Database</li>

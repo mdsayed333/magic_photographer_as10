@@ -28,7 +28,6 @@ const Register = () => {
     const email = event.target.email.value;
     const password = event.target.password.value;
     const confirmPassword = event.target.confirmPassword.value;
-    console.log(email, password, confirmPassword);
 
     if (password === confirmPassword) {
       createUserWithEmailAndPassword(email, password);

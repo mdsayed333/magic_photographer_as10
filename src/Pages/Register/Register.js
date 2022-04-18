@@ -10,8 +10,7 @@ const Register = () => {
   const location = useLocation();
   const [handleError, setHandleError] = useState("");
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
-
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
   let from = location.state?.from?.pathname || "/";
 
@@ -87,9 +86,6 @@ const Register = () => {
           <button type="submit" className="myButton d-block mt-2 w-50 mx-auto">
             Register
           </button>
-          {/* <button className="btn btn-link text-decoration-none">
-              Forget Password
-            </button> */}
           <p className="mt-2 text-center">
             Already have an account?{" "}
             <span>

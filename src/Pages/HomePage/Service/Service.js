@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, Col, } from "react-bootstrap";
-import { Navigate, useNavigate } from "react-router-dom";
-import CheckOut from "../../CheckOut/CheckOut";
+import { useNavigate } from "react-router-dom";
 import './Service.css';
 
 const Service = ({ service }) => {

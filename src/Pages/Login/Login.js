@@ -1,4 +1,3 @@
-import { async } from "@firebase/util";
 import { useState } from "react";
 import {
   useSendPasswordResetEmail,
@@ -10,8 +9,6 @@ import Footer from "../Shared/Footer/Footer";
 import "./Login.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import google from "../../img/icon/google.png";
-import github from "../../img/icon/github2.png";
 import SocialLogin from "../SocialLocin/SocialLogin";
 
 const Login = () => {
@@ -22,7 +19,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [sendPasswordResetEmail, sending, resetPasswordError] =
     useSendPasswordResetEmail(auth);
-    const [forgetPasswordError, setForgetPasswordError] = useState('');
+  const [forgetPasswordError, setForgetPasswordError] = useState("");
 
   let from = location.state?.from?.pathname || "/";
 
@@ -38,20 +35,18 @@ const Login = () => {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
-    console.log(email, password);
 
     signInWithEmailAndPassword(email, password);
   };
 
-
-
   const forgetPassword = async () => {
-    if(email){
+    if (email) {
       await sendPasswordResetEmail(email);
       toast("Sent Password Reset email");
-    }
-    else{
-      setForgetPasswordError(<p className="text-danger">Please enter your email.</p>);
+    } else {
+      setForgetPasswordError(
+        <p className="text-danger">Please enter your email.</p>
+      );
     }
   };
 
@@ -85,16 +80,14 @@ const Login = () => {
                 />
               </label>
             </div>
-            {
-              logInError
-            }
+            {logInError}
             <button
               type="submit"
               className="myButton d-block mt-2 w-50 mx-auto"
             >
               Login
             </button>
-           
+
             <p className="mt-2 text-center">
               Dont have any account?{" "}
               <span>
@@ -104,9 +97,7 @@ const Login = () => {
               </span>
             </p>
           </form>
-          {
-            forgetPasswordError
-          }
+          {forgetPasswordError}
           <button onClick={forgetPassword} className=" btn btn-link">
             Forget Password
           </button>

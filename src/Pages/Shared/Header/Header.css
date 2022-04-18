@@ -1,9 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
 
-#navbar a{
-    /* color:#a49695; */
-}
 #navbar a:hover{
     color:#dd2323;
 }

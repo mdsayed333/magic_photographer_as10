@@ -6,10 +6,10 @@ import sayed from "../../img/sayed.png";
 const About = () => {
   return (
     <div className="container mx-auto">
-      <div className="about">
+      <div className="about rounded p-4">
         <h2 className="mb-0 title ">My Goal</h2>
-            <img className="profile-img m-0 p-0" src={sayed} alt="" />
-        
+        <img className="profile-img m-0 p-0" src={sayed} alt="" />
+
         <div className="text-start">
           <p>
             আমার একমাত্র লক্ষই হলো একজন ভালো মানের Web Developer হিসেবে নিজেকে
@@ -17,8 +17,8 @@ const About = () => {
             হিসেবে তৈরি করতে চাই।
           </p>
           <p>
-            এই লক্ষে পৌঁছানোর জন্য আমাকে দৈনিক ১৮ ঘন্টা কাজ করা লাগলেও অমি তা করতে
-            রাজি । আমি জানি আমি আমার লক্ষে পৌঁছানোর জন্য এতটুকু Effort করার
+            এই লক্ষে পৌঁছানোর জন্য আমাকে দৈনিক ১৮ ঘন্টা কাজ করা লাগলেও অমি তা
+            করতে রাজি । আমি জানি আমি আমার লক্ষে পৌঁছানোর জন্য এতটুকু Effort করার
             সক্ষমতা রাখি।
           </p>
           <p>

@@ -2,22 +2,22 @@
     {
         "id": 1,
         "name": "1hr Street Photoshoot",
-        "img": "https://previews.123rf.com/images/interfectoremua/interfectoremua1703/interfectoremua170300030/76968416-street-photoshoot-of-a-girl-in-the-city-direction-and-style-street-fashion-.jpg",
+        "img": "https://photographylife.com/wp-content/uploads/2019/02/Stripes.jpg",
         "description": "1 hour STREET style photography. Basic production INCLUDES +/-100 jpg from RAW",
-        "price": "230"
+        "price": "190"
     },
     {
         "id": 2,
         "name": "1hr Studio Photoshoot",
-        "img": "https://previews.123rf.com/images/interfectoremua/interfectoremua1703/interfectoremua170300030/76968416-street-photoshoot-of-a-girl-in-the-city-direction-and-style-street-fashion-.jpg",
+        "img": "https://dlc.photo/wp-content/uploads/2014/06/Photgraphic-Studio-Chaing-Mai-Thailand.jpg",
         "description": "1 hour STUDIO fashion photography session.INCLUDES +/- 100 jpg from RAW",
         "price": "330"
     },
     {
         "id": 3,
         "name": "6hr Studio Photoshoot",
-        "img": "https://previews.123rf.com/images/interfectoremua/interfectoremua1703/interfectoremua170300030/76968416-street-photoshoot-of-a-girl-in-the-city-direction-and-style-street-fashion-.jpg",
+        "img": "https://media.istockphoto.com/photos/male-model-standing-in-front-of-the-camera-at-the-photo-studio-picture-id1334540616?b=1&k=20&m=1334540616&s=170667a&w=0&h=QZtylH55VA7pMBSgEwP5IuQ0JHXCKJ4bYTsaebfUm1o=",
         "description": "6hrs STUDIO style fashion photography session. 10 Retouched images and INCLUDES +100 jpg from RAW",
-        "price": "1,980"
+        "price": "1,180"
     }
 ]

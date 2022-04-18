@@ -1,6 +1,8 @@
 # ✨Magic Photographer ✨
 
 Live Website Link [Magic Photographer](https://magic-photographer.firebaseapp.com/).
+
+
 Live Website Link option2 [Magic Photographer](https://magic-photographer.web.app/).
 
 
@@ -15,11 +17,18 @@ Live Website Link option2 [Magic Photographer](https://magic-photographer.web.ap
 
 ## Used technologies (frameworks, libraries)
 > Create a New React App
+
 > React Router
+
 > Vanilla Bootstrap
+
 > React Bootstrap
+
 > React Firebase Hooks
+
 > Google Font
+
 > React-Toastify
+
 > Google Firebase
 

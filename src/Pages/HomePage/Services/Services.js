@@ -11,7 +11,6 @@ const Services = () => {
       .then((data) => setServices(data));
   }, []);
 
-  console.log(services);
   return (
     <div>
       <h2 className="text-center title mt-5 mb-4">My Services</h2>

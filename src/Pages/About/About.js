@@ -11,6 +11,7 @@ const About = () => {
         <img className="profile-img m-0 p-0" src={sayed} alt="" />
 
         <div className="text-start">
+          <h4 className="text-danger">Mohammed Sayed</h4>
           <p>
             আমার একমাত্র লক্ষই হলো একজন ভালো মানের Web Developer হিসেবে নিজেকে
             গড়ে তোলা। আমি ২০২২ সালের মধ্যেই নিজেকে একজন Full Stack Web Developer
